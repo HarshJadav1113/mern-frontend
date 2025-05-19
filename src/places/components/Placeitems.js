@@ -95,7 +95,7 @@ const PlaceItem = (props) => {
               VIEW ON MAP
             </Button>
             {auth.userId === props.creatorId && (
-              <Button to={`${process.env.REACT_APP_BACKEND_URL}/places/${props.id}`}>EDIT</Button>
+              <Button to={`/places/${props.id}`}>EDIT</Button>
             )}
 
             {auth.userId === props.creatorId && (
